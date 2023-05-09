@@ -7,5 +7,8 @@ class Api::V1::TasksController < ApplicationController
   end
 
   def show
+    render json: {
+      msg: 'hello'
+    }, status: 200
   end
 end

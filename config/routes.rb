@@ -1,10 +1,8 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
-      resources :tasks, only: [:index, :show, :create]
-      resources :lists, only: [:index, :show, :create]
-      # get 'tasks/index'
-      # get 'tasks/show'
+      resources :tasks, only: [:index, :show, :create, :update]
+      resources :lists, only: [:index, :show, :create, :update]
     end
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

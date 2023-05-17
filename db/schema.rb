@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_05_13_222230) do
+ActiveRecord::Schema[7.0].define(version: 2023_05_17_081408) do
   create_table "lists", charset: "utf8mb4", force: :cascade do |t|
     t.string "name"
     t.string "description"
@@ -24,7 +24,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_13_222230) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "list_id"
-    t.datetime "dateCompleted"
+    t.datetime "date_completed"
     t.index ["list_id"], name: "index_tasks_on_list_id"
   end
 
